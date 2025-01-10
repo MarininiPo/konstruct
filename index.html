@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konstruct-template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-wrapper">
+        <a href="#" id="home" class="header-logo">
+          <img src="./img/header-logo.svg" alt="Logo" />
+        </a>
+        <h1 class="header-title">PARTNER WITH KONSTUCT</h1>
+        <p class="header-description">
+          An&nbsp;award-winning construction management firm
+        </p>
+        <p class="header-scroll">SCROLL&nbsp;DOWN</p>
+      </div>
+    </header>
+    <main>
+      <section class="navbar">
+        <div class="container">
+          <div class="navbar-wrapper">
+            <div class="logo">
+              <a href="#"
+                ><img src="./img/projeco-logo-black.svg" alt="logo"
+              /></a>
+            </div>
+            <nav class="navigation">
+              <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about-us">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#">WORK</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+              </ul>
+            </nav>
+            <div class="burger-menu" onclick="toggleModal()">
+                <img src="./img/menu-burger.svg" alt="menu-burger">
+            </div>
+            <div id="modal-nav" class="modal">
+                <div class="modal-content">
+                  <span class="close-btn" onclick="toggleModal()">&times;</span>
+                  <nav class="modal-navigation">
+                    <ul>
+                      <li><a href="#">HOME</a></li>
+                      <li><a href="#">ABOUT</a></li>
+                      <li><a href="#">SERVICES</a></li>
+                      <li><a href="#">WORK</a></li>
+                      <li><a href="#">CONTACT</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about-us">
+        <div class="container">
+          <div class="about-title__box">
+            <h2 class="about-title">OUR STORY</h2>
+            <div class="about-title__line"></div>
+          </div>
+          <div class="about-content">
+            <div class="about-content__left">
+              <h3 class="about-content__left-h3">
+                Founded in&nbsp;2011 by&nbsp;John Mathew<br/>Smith,
+                <span>Konstruct</span> has become the number one construction
+                management firm
+              </h3>
+              <p class="about-content__left-discription">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut&nbsp;laoreet dolore magna
+                aliquam erat. Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna aliquam erat.
+              </p>
+            </div>
+            <div class="about-content__right">
+              <div class="about-content__right-box first">
+                <h3 class="about-content__right-h3">WE PLAN</h3>
+              </div>
+              <div class="about-content__right-box second">
+                <h3 class="about-content__right-h3">WE MANAGE</h3>
+              </div>
+              <div class="about-content__right-box therd">
+                <h3 class="about-content__right-h3">WE BUILD</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="container">
+          <div class="services-title__box">
+            <div class="title-line">
+              <h2 class="services-title">OUR CAPABILITIES</h2>
+              <div class="services-title__line"></div>
+            </div>
+            <div class="services-title__description--button">
+              <p class="services-title__description">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut&nbsp;laoreet dolore magna
+                aliquam erat.
+              </p>
+              <button class="button">ALL&nbsp;SERVICES</button>
+            </div>
+          </div>
+          <div class="services-items">
+            <div class="services-item">
+              <div class="services-item-content">
+                <img src="./img/services-1.svg" alt="services icon" />
+                <h3 class="services-h3">PROJECT AND CONSTRUCTION MANAGEMENT</h3>
+                <p class="services-item__description">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut&nbsp;laoreet dolore
+                  magna aliquam erat.
+                </p>
+              </div>
+            </div>
+
+            <div class="services-item">
+              <div class="services-item-content">
+                <img src="./img/services-2.svg" alt="services icon" />
+                <h3 class="services-h3">STRUCTURE AUDIT AND MAINTENANCE</h3>
+                <p class="services-item__description">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut&nbsp;laoreet dolore
+                  magna aliquam erat.
+                </p>
+              </div>
+            </div>
+
+            <div class="services-item">
+              <div class="services-item-content">
+                <img src="./img/services-3.svg" alt="services icon" />
+                <h3 class="services-h3">FACTORY CONSTRUCTION AND MODELING</h3>
+                <p class="services-item__description">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut&nbsp;laoreet dolore
+                  magna aliquam erat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="get">
+        <div class="get-wrapper">
+          <h2 class="get-title">Want to&nbsp;build something amazing?</h2>
+          <a href="#" class="button get-button">GET IN&nbsp;TOUCH</a>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="container">
+          <div class="newsletter-wrapper">
+            <label for="email" class="newsletter-title"
+              >Newsletter Signup</label
+            >
+            <div class="form">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="newsletter-form"
+                placeholder="test@youremail.com"
+                required
+              />
+              <button type="submit" class="button">SIGNUP</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="item footer-about">
+            <h4 class="footer-title-h4">COMPANY</h4>
+            <div class="footer-about__content">
+              <a href="#" class="footer-logo">
+                <img src="./img/header-logo.svg" alt="Logo" />
+              </a>
+              <p class="footer-about__description">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut&nbsp;laoreet dolore magna
+                aliquam erat.
+              </p>
+            </div>
+          </div>
+          <div class="item footer-nav__box">
+            <h4 class="footer-title-h4">LINKS</h4>
+
+            <div class="footer-navigation">
+              <div class="footer-nav-item">
+                <a href="#home">HOME</a>
+                <a href="#about-us">ABOUT</a>
+                <a href="#services">SERVICES</a>
+                <a href="#">PROJECTS</a>
+                <a href="#">CONTACT US</a>
+              </div>
+              <div class="footer-nav-item next">
+                <a href="#">FAQ</a>
+                <a href="#">TERMS</a>
+                <a href="#">CAREERS</a>
+              </div>
+              <div class="footer-nav-item next">
+                <a href="#">BLOG</a>
+                <a href="#">PARTNERS</a>
+                <a href="#">NEWS</a>
+              </div>
+            </div>
+          </div>
+          <div class="item footer-contacts" id="contact">
+            <h4 class="footer-title-h4">CONTACT US</h4>
+            <div class="footer-contact__content">
+              <p class="footer-contacts-adress">
+                213 Baker Street<br />Oriel City Kounty<br />7000&nbsp;KNW,<br />Kountry
+                Name
+              </p>
+              <a href="tel:+239942334022" class="tel"
+                >+23&nbsp;994&nbsp;233 4022</a
+              >
+              <a href="mailto:info@konstruct.com">info@konstruct.com</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="footer-social">
+              <a href="#"><img src="./img/fasebooke.svg" alt="fasebooke" /></a>
+              <a href="#"><img src="./img/twitter.svg" alt="twitter" /></a>
+              <a href="#"><img src="./img/gmail.svg" alt="gmail" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyrite">
+        <p class="copyrite">
+          &copy;&nbsp;2017 Konstruct Inc. Designed by&nbsp;Jane Kathryn Teo
+        </p>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
